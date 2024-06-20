@@ -1,0 +1,72 @@
+.postSubmit {
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+    padding: 3em;
+    padding-right: 1em;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 34.5%;
+
+    border-radius: 1em;
+}
+
+.dark form{
+    border: 1px solid white;
+}
+
+.light form{
+    border: 1px solid #1e2642;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 5%;
+}
+
+form li + li{
+    margin-top: 1em;
+
+}
+
+label{
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+input,
+textarea{
+    font-size: 1em;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+input:focus,
+textarea:focus{
+    border-color: black;
+}
+
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+
+#submitButton{
+    font-family: "Audiowide", sans-serif;
+    /* justify-content: center; */
+    text-align: center;
+    padding-left: 5px;
+    margin: auto;
+    position:relative;
+    top: 80%;
+    left: 15%;
+}

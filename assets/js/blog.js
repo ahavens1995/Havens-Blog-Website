@@ -26,6 +26,7 @@ function renderPosts(){
         ul.appendChild(li1);
         ul.appendChild(li2);
         ul.appendChild(li3);
+        ul.setAttribute("class", "card");
 
         blogList.appendChild(ul);
     }

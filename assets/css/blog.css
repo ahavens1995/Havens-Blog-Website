@@ -1,0 +1,28 @@
+#blogs{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    border-radius: 1em;
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    display: block;
+}
+
+
+.dark .card{
+    border: 1px solid white;
+
+}
+
+.light .card{
+    border: 1px solid #1e2642;
+}

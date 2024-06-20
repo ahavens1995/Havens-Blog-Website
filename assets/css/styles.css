@@ -1,12 +1,7 @@
 body {
+    font-family: "Audiowide", sans-serif;
     /* display: block; */
 
-    font-family: "Audiowide", sans-serif;
-
-    /* width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px; */
 }
 
 .dark{
@@ -16,8 +11,8 @@ body {
 }
 
 .light{
-    background-color: #4f63a8;
-    color: white;
+    background-color: white;
+    color: 1e2642;
     height: 100vh;
 }
 
@@ -35,10 +30,39 @@ body {
     right: 0px;
     padding: 10px;
 }
+
+p{
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 39%;
+}
+
+.dark p{
+    color: white;
+}
+
+.light p{
+    color: #1e2642;
+}
   
 .footer {
     width: 100%;
-    position: absolute;
-    padding-bottom: 100px;
-    bottom: 0px;
+    position: fixed;
+    left: 0px;
+    bottom: 3px;
+
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.light .footer a{
+    color: #1e2642;
+}
+
+.dark .footer a{
+    color: white;
 }
