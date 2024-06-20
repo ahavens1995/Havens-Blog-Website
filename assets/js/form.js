@@ -2,7 +2,7 @@
 const nameInput = document.getElementById('name');
 const unameInput = document.getElementById('uname');
 const blogPostInput = document.getElementById('bPost');
-const submitButton = document.getElementById('submit')
+const submitButton = document.getElementById('submitButton')
 const errorMsg = document.getElementById('errorMsg');
 
 // Create an Array of Arrays
@@ -29,8 +29,8 @@ submitButton.addEventListener('click', function (event) {
 function savePost() {
     
     // If the data input is null, return an error
-    if(nameInput.value == "" || unameInput.value == "" || blogPostInput.value == ""){
-        errorMsg.textContent = "All fields must contain information";
+    if(nameInput.value === "" || unameInput.value === "" || blogPostInput.value === ""){
+        errorMsg.textContent = "⚝ All fields must contain information ⚝";
         return;
     }
 
