@@ -12,6 +12,12 @@ let blogPosts = [];
 // Init Function
 function init() {
 
+    const storedPosts = JSON.parse(localStorage.getItem('blogPosts'));
+
+    if(blogPosts !== null){
+        blogPosts = storedPosts;
+    }
+
 }
 
 submitButton.addEventListener('click', function (event) {
@@ -45,3 +51,5 @@ function savePost() {
     // Once the information has been submitted, re-direct to the Blog Page
     location.href = "blog.html"
 }
+
+init();
