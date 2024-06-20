@@ -4,7 +4,6 @@ const unameInput = document.getElementById('uname');
 const blogPostInput = document.getElementById('bPost');
 const submitButton = document.getElementById('submit')
 const errorMsg = document.getElementById('errorMsg');
-const blogForm = document.getElementById('blogForm');
 
 // Create an Array of Arrays
 let blogPosts = [];
