@@ -20,7 +20,7 @@ function renderPosts(){
         const li3 = document.createElement('li');
 
         li1.textContent = "Name : " + post.name;
-        li2.textContent = "Username : " + post.uname;
+        li2.textContent = "Blog Title : " + post.blogTitle;
         li3.textContent = post.blogPost;
 
         ul.appendChild(li1);

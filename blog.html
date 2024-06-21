@@ -14,22 +14,25 @@
     <title>Blog Posts</title>
 </head>
 <body class ="container dark">
-    <div class="header">
-        <h1>Captain's Log</h1>
-        <img src="./assets/images/light_off.png"
-        data-dark="./assets/images/light_off.png"
-        data-light="./assets/images/light_on.png"
-        data-state="dark" id="theme-switcher">
-        <button id="submit">Back to Home</button>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Captain's Log</h1>
+            <img src="./assets/images/light_off.png"
+            data-dark="./assets/images/light_off.png"
+            data-light="./assets/images/light_on.png"
+            data-state="dark" id="theme-switcher">
+            <button id="submit">Back to Home</button>
+        </div>
+        
+        <div class="content">
+            <div id="blogs"></div> 
+        </div>
+    
+        <div class="footer">
+            <a href="https://ahavens1995.github.io/Havens-Portfolio/">Aurora's Portfolio</a>
+        </div>
     </div>
     
-    <div class="body">
-        <div id="blogs"></div> 
-    </div>
-
-    <div class="footer">
-        <a href="https://ahavens1995.github.io/Havens-Portfolio/">Aurora's Portfolio</a>
-    </div>
     
     <script src="./assets/js/blog.js"></script>
     <script src="./assets/js/logic.js"></script>
