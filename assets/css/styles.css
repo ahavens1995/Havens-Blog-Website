@@ -1,3 +1,4 @@
+/* Apply defaults to the page body*/
 html, body {
     font-family: "Audiowide", sans-serif;
     margin: 0;
@@ -5,27 +6,32 @@ html, body {
     height: 100%;
 }
 
+/* Container to set the height of app*/
 .container{
     min-height: 100%;
     position: relative;
 }
 
+/* Dark Mode */
 .dark{
     background-color: #1e2642;
     color: white;
 }
 
+/* Light Mode */
 .light{
     background-color: white;
     color: #1e2642;
 }
 
+/* Wrapper to help page placement */
 .wrapper{
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
+/* Header/Footer size */
 .header, .footer {
     padding: 20px;
 }
@@ -33,10 +39,10 @@ html, body {
 .header{
     text-align: center;
 
-    /* padding: 10px; */
     font-size: 48px;  
 }
 
+/* Theme switcher button to change from dark to light */
 #theme-switcher{
     position: absolute;
     top: 0px;
@@ -45,17 +51,10 @@ html, body {
 }
 
 .content{
-    /* min-width: 100%;
-    padding-bottom: 60px; */
     padding: 20px;
 }
   
 .footer{
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* height: 60px;
-    width: 100%; */
-
     text-align: center;
     text-decoration: none;
 }
@@ -64,6 +63,7 @@ html, body {
     text-decoration: none;
 }
 
+/* Light and dark footer */
 .light .footer a{
     color: #1e2642;
 }
@@ -71,17 +71,3 @@ html, body {
 .dark .footer a{
     color: white;
 }
-
-/* @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    /* #theme-swticher {
-        position: absolute;
-        top: 20px;
-        right: 50px;
-        padding: 10px;
-    }
-    .content{
-        justify-content: center;
-        margin: auto;
-    }
-  } */ 

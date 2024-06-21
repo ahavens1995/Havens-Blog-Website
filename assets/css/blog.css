@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/* Card elements to be created when a new blog is added */
 .card{
     border-radius: 1em;
     padding: 10px;
@@ -20,6 +21,7 @@ li{
     padding: 2px;
 }
 
+/* Dark and light mode cards */
 .dark .card{
     border: 1px solid white;
 }
