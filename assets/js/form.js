@@ -1,19 +1,19 @@
 // Constant variables inputted by the form
 const nameInput = document.getElementById('name');
-const unameInput = document.getElementById('uname');
+const blogTitleInput = document.getElementById('blogTitle');
 const blogPostInput = document.getElementById('bPost');
 const submitButton = document.getElementById('submitButton')
 const errorMsg = document.getElementById('errorMsg');
 
 // Create an Array of Arrays
-let blogPosts = [];
+let blogPosts = new Array();
 
 // Init Function
 function init() {
 
     const storedPosts = JSON.parse(localStorage.getItem('blogPosts'));
 
-    if(blogPosts !== null){
+    if(storedPosts !== null){
         blogPosts = storedPosts;
     }
 
@@ -29,7 +29,7 @@ submitButton.addEventListener('click', function (event) {
 function savePost() {
     
     // If the data input is null, return an error
-    if(nameInput.value === "" || unameInput.value === "" || blogPostInput.value === ""){
+    if(nameInput.value === "" || blogTitleInput.value === "" || blogPostInput.value === ""){
         errorMsg.textContent = "⚝ All fields must contain information ⚝";
         return;
     }
@@ -37,12 +37,12 @@ function savePost() {
     // Organize the data into a blog object
     const blogObj = {
         name: nameInput.value,
-        uname: unameInput.value,
+        blogTitle: blogTitleInput.value,
         blogPost: blogPostInput.value.trim()
     };
 
     // Push the blog object onto the Blog Posts Array
-    blogPosts.push(blogObj);
+    blogPosts.unshift(blogObj);
 
     // Put the blog posts into local storage
     localStorage.setItem('blogPosts', JSON.stringify(blogPosts))
