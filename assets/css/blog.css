@@ -6,23 +6,28 @@
 .card{
     border-radius: 1em;
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 ul{
     list-style-type: none;
-    padding: 0;
 }
 
 li{
-    display: block;
+    padding: 2px;
 }
-
 
 .dark .card{
     border: 1px solid white;
-
 }
 
 .light .card{
     border: 1px solid #1e2642;
 }
+
+/* button{
+    font-family: "Audiowide", sans-serif;
+} */

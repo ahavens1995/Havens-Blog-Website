@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
+
     <title>Home Page</title>
 </head>
-<body>
-    <div class="container dark">
+<body class="container dark"> 
+    
         <div class="header">
             <h1>Good Day, Captain</h1>
             <img src="./assets/images/light_off.png"
@@ -19,41 +22,40 @@
             data-state="dark" id="theme-switcher">
         </div>
 
-        <div class="postSubmit">
-            <form>
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input id="name"/>
-                    </li>
-        
-                    <li>
-                        <label for="username">Username:</label>
-                        <input id="uname"/>
-                    </li>
-        
-                    <li>
-                        <label for="blog_Post">Blog Post:</label>
-                        <textarea id="bPost"></textarea>
-                    </li>
-                    <li>
-                        <button id="submitButton">Send your Message</button>
-                    </li>
-                </ul>
-                
-            </form>
-            <p id="errorMsg"></p>
+        <div class="body">
+            <div class="postSubmit">
+                <form>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input id="name"/>
+                        </li>
+            
+                        <li>
+                            <label for="username">Username:</label>
+                            <input id="uname"/>
+                        </li>
+            
+                        <li>
+                            <label for="blog_Post">Blog Post:</label>
+                            <textarea id="bPost"></textarea>
+                        </li>
+                        <li>
+                            <button id="submitButton">Send your Message</button>
+                        </li>
+                    </ul>
+                    
+                </form>
+                <p id="errorMsg"></p>
+            </div>
+
         </div>
-        
 
-        <!-- <div class="footer">
+        <div class="footer">
             <a href="https://ahavens1995.github.io/Havens-Portfolio/">Aurora's Portfolio</a>
-        </div> -->
-
-    </div>
+        </div>
 
 
-    
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>
