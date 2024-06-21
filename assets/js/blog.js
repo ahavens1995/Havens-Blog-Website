@@ -2,16 +2,19 @@
 const blogList = document.querySelector('#blogs');
 const backHome = document.getElementById('submit');
 
+// Create a stored post array
 let storedPosts = [];
 
 backHome.addEventListener('click', function (event) {
-    // Do not reload the page
+    // When user clicks home, return to home page
     location.href = "index.html";
 });
 
 function renderPosts(){
+    // Clear initial posts
     blogList.innerHTML = '';
     
+    // Run through all stored posts in local and output them as an unordered list
     for(let i = 0; i < storedPosts.length; i++){
         const post = storedPosts[i];
         const ul = document.createElement('ul');
@@ -32,6 +35,7 @@ function renderPosts(){
     }
 }
 
+// When page loads, grab the stored posts and render them on the page
 function init() {
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
 

@@ -11,6 +11,7 @@ let blogPosts = new Array();
 // Init Function
 function init() {
 
+    // On page startup, grab saved posts
     const storedPosts = JSON.parse(localStorage.getItem('blogPosts'));
 
     if(storedPosts !== null){
@@ -23,6 +24,7 @@ submitButton.addEventListener('click', function (event) {
     // Do not reload the page
     event.preventDefault();
 
+    // When clicked, run save Post to save the post to local
     savePost();
 });
 
