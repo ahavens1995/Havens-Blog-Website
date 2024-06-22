@@ -22,7 +22,7 @@ Project built with:
 * CSS
 
 ## Getting Started 
-To use the payroll tracker, perform the following:
+To use the blog site, perform the following:
 1. Open the github page: https://ahavens1995.github.io/Havens-Blog-Website/
     ![image](./assets/images/splashPage.PNG)
 2. Enter the following:
